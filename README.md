@@ -31,7 +31,7 @@ Go to next round
 
 email users of next match, prizes etc
 
-<img src="/images/torny8.PNG" alt=""/>
+<img src="/images/torny9.PNG" alt=""/>
 
 
 
