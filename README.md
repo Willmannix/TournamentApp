@@ -6,5 +6,5 @@ C# SQL or Text files
 
 
 
-![Alt text](https://github.com/Willmannix/TournamentApp/images/torny1.jpg?raw=true "Torny")
+![Alt text](/Willmannix/TournamentApp/images/torny1.PNG?raw=true "Torny")
 
