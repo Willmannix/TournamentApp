@@ -6,5 +6,5 @@ C# SQL or Text files
 
 
 
-![Alt text](/Willmannix/TournamentApp/images/torny1.PNG?raw=true "Torny")
+<img src="/images/torny1.PNG" alt="My cool logo"/>
 
