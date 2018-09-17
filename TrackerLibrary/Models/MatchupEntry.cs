@@ -21,7 +21,7 @@ namespace TrackerLibrary.Models
             }
             else
             {
-                return "Team steht noch nicht fest";
+                return "Team is not fixed yet";
             }
         }
 

@@ -9,15 +9,13 @@ namespace TrackerUI
 {
     static class Program
     {
-        /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
+
             // Initialize the connections
             GlobalConfig.InitializeConnections(DatabaseType.Sql);
             GlobalConfig.InitializeConnections(DatabaseType.TextFile);

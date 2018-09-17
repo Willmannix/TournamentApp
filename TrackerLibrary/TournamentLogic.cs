@@ -12,9 +12,8 @@ namespace TrackerLibrary
     {
         public static void CreateRounds(Tournament model)
         {
-            // Order our List randomly of teams ;
-            // check if is big enough - if not, add byes (2*2*2*2 - 2^n) ;
-            // Create our first round of matchups ;
+          
+            // Create first round of matchups ;
             // Create every Round after that - 8 Matchups - 4 Matchups - 2 Matchups - 1 Matchup ;
             List<Team> randomizedTeams = RandomizeTeamOrder(model.EnteredTeams);
             int rounds = FindNumberOfRounds(randomizedTeams.Count);
@@ -182,7 +181,7 @@ namespace TrackerLibrary
 
             toAdress = person.EmailAdress;
 
-            
+            EmailLogic.SendEmail(toAdress, subject, body.ToString());
         }
 
         private static int CheckCurrentRound(this Tournament model)
@@ -200,7 +199,7 @@ namespace TrackerLibrary
                 }
             }
 
-            // Tournement is complete
+            // Tournament is complete
             CompleteTournament(model);
             return output - 1;
         }
@@ -272,9 +271,9 @@ namespace TrackerLibrary
                 }
             }
 
-           
+            EmailLogic.SendEmail(new List<string>(), bcc, subject, body.ToString());
 
-            // Complete Tournametn
+            // Complete Tournament
             model.CompleteTournament();
         }
 
